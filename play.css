@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@font-face {
+  font-family: PSfont;
+  src: url(font/SSTBold.TTF);
+  font-weight: 400;
+}
+@font-face {
+  font-family: PShead;
+  src: url(font/SSTLight.TTF);
+  font-size: 26px;
+  line-height: 24px;
+  text-align: start;
+  letter-spacing: normal;
+  font-weight: 100;
+}
+p{
+  font-family: 'PT Sans', sans-serif;
+}
+h1,h2,h3{
+  font-family: PShead;
+    font-weight: 100;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  width: 1519px;
+}
+  
+
+
+.btn {
+
+  padding: .5em 1em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 40px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-top: 28px;
+  font-family: PSfont;
+  margin-left: 5px;
+  font-size: 16px;
+
+  --background-color: #ffffff;
+  --background-color-2: #2d64e6;
+   --color: white;
+  --border-size: 2px;
+}
+
+.btn.btn-border-pop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 40px;
+  border: var(--border-size) solid var(--background-color);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.btn.btn-border-pop:hover::before,
+.btn.btn-border-pop:focus::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+}
+
+
+.btn2 {
+  background-color: var(--background-color);
+  color: #222;
+  padding: .5em 1em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 40px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  background-color: #2d64e6;
+  color: rgb(255, 255, 255);
+  margin-top: 28px;
+  font-family: PSfont;
+  margin-left: 5px;
+  font-size: 16px;
+
+  --background-color: #ffffff;
+  --background-color-2: #2d64e6;
+   --color: white;
+  --border-size: 2px;
+}
+.btn2.btn-border-pop-blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 40px;
+  border: var(--border-size) solid var(--background-color-2);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.btn2.btn-border-pop-blue:hover::before,
+.btn2.btn-border-pop-blue:focus::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+}
+.sonybar{
+  width: 1519px;
+  height:34px;
+    background-color: black;
+    
+}
+
+.sonylogo{
+  width: 75px;
+  height: 35px;
+  margin-left: 1436px;
+}
+
+header{
+  display: flex;
+  height: 64px;
+  padding-left: 20px;
+}
+
+.logo{
+  width: auto;
+  height: auto;
+  padding-top: 7px;
+  margin-right: 8px;
+}
+
+.nav-links{
+  display:flex;
+  width: 700px;
+  padding-top: 10px;
+  height: auto;
+  margin-left: 10px;
+  
+}
+
+
+.nav-list{
+
+  display: flex;
+  padding-top: 14px;
+  padding-right: 25px;
+  font-family: PSfont;
+  font-size: 12px;
+  text-align: c;
+  margin-right: 10px;
+}
+
+.arrow{
+
+  font-family: 'Courier New', Courier, monospace;
+  width: 10px;
+  height: 23px;
+  font-weight: bold;
+  transform:scale(1.5,1) rotate(90deg);
+  color: gray;
+}
+
+.sign-div{
+  padding-top: 20px;
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sign-in-btn{
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  width: 94px;
+  height: 24px;
+  font-weight: bolder;
+
+}
+
+.search-icon{
+  width: 53px;
+  height: 24px;
+  margin-top: 20px;
+}
+
+
+.imghome{
+  background-color: #00439c;
+  padding-left: 100px;
+  width: 1419px;
+  height: 569px;
+    z-index: -2;
+   background-image:    linear-gradient(30deg,
+   rgba(0, 0, 0, 0.984),
+   rgba(0, 0, 0, 0) 50%),url(images/horizon-forbidden-west-hero-banner-desktop-01-en-07may21.webp);
+   background-repeat: no-repeat;
+   background-size: 1519px 569px;
+}
+
+.home-cont{
+
+  width: 39%;
+  height: 100%;
+  padding-top: 161px;
+}
+
+.home-logo-img{
+  background-image: url(images/horizon-forbidden-west-white-logo-01-ps5-07may21$en.webp);
+  background-size: 413px 151px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 147px;
+  margin-bottom: 20px;
+
+}
+
+.home-dis{
+  margin-top: 18px;
+}
+
+.home-head{
+  color: white;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+.column1-2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  border-radius: 20px;
+  border: 3px solid #2d64e6;
+  }
+.column2 {
+    float: left;
+    width: 33.33%;
+    padding-right: 31px;
+    height: 285px;
+    width: 185px;
+    padding-top: 31px;
+    text-align: left;
+  }
+
+
+.newRelease{
+  color: white;
+  width: 1272px;
+  height: 68px;
+  margin-left: 131px;
+  margin-right: 111px;
+  padding-top: 20px;
+  margin-top: 30px;
+} 
+
+.rele-head{
+  font-size: medium;
+  margin-bottom: 10px;
+}
+
+.new-rel-logo{
+  color: white;
+  margin-top: 5px;
+  margin-left: 12px;
+  font-size: 16px;
+  padding-right: 12px;
+}
+  /* Clear floats after image containers */
+  .row {
+    content: "";
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+  }
+  .row2 {
+    content: "";
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 131px;
+
+  }
+  
+  .row4 {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+.con{
+  width: 100%;
+  height: 686px;
+  display: flex;
+
+  margin-top: 40px;
+
+  }
+
+  .ps5-head{
+    height: 46px;
+    width: 390px;
+    margin-top: 248px;
+    font-size: 17px;
+  }
+
+  .ps5-sub{
+    margin-top: 16px;
+    margin-bottom: 28px;
+  }
+
+  .ps5-sub p{
+    font-size: 20px;
+    line-height: 30px;
+    color: gray;
+  }
+
+.ply-5{
+
+   width:429px;
+   height: 686px;
+    margin-left: 100px;
+}
+.ps5-img{
+
+  width: 858px; 
+  height: 686px;
+   background-image: url(images/playstation-5-horizontal-product-shot-01-ps5-en-23nov20.webp) ; 
+
+  background-size: 720px 720px;
+  background-repeat: no-repeat;
+  margin-left: 125px;
+  background: linear-gradient(to right);
+}
+
+.column4{
+  width:254px;
+  height: 183px;
+  border-radius: 20px;
+  text-align: center;
+}
+.column5{
+  width:254px;
+  height: 173px;
+  border-radius: 20px;
+  border: 3px solid #2d64e6;
+  text-align: center;
+}
+.column7{
+  width:400px;
+
+  border-radius: 20px;
+  margin-top: -180px;
+  text-align: center;
+  color: white;
+  
+}
+
+  .roundedImg{
+    border-radius: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  .roundedImg:hover{
+    opacity: 1;
+    box-shadow: 9px 9px 26px -2px rgba(0, 0, 0, 0.55);
+    margin-top: -5px;
+  }
+  .roundedImg3{
+    border-radius: 8px;
+    height: 185px;
+    width: 185px;
+    transition: transform .2s; 
+  }
+.roundedImg3:hover{
+  transform: scale(1.03);
+}
+
+  .roundedImg2{
+    border-radius: 20px;
+    margin-top: -100px;
+    margin: 10px;
+    height: 211px;
+    width: 376px;
+    box-shadow: 9px 9px 26px -2px rgba(0,0,0,0.75);
+    transition: transform .2s; 
+  }
+
+  .roundedImg2:hover{
+    transform: scale(1.03);
+  }
+  .roundedImg8{
+    border-radius: 20px;
+    height: 132px;
+    width: 138px;
+    margin-left: 50px;
+    margin-top: 11px;
+
+  }
+  .roundedImg4{
+    border-radius: 20px;
+    height: 132px;
+    width: 138px;
+    margin-left: 50px;
+    margin-top: 11px;
+    opacity: 0.6;
+    transition: 0.3s; 
+  }
+
+
+  .roundedImg4:hover{
+    opacity: 1;
+  }
+  .roundedImg5{
+    border-radius: 20px;
+    height: 121px;
+    width: 215px;
+    margin-left: 20px;
+    margin-top: 20px;
+    opacity: 0.6;
+    transition: 0.3s; 
+  }
+
+  .roundedImg5:hover{
+    opacity: 1;
+  }
+  .roundedImg6{
+    border-radius: 20px;
+    height: 122px;
+    width: 215px;
+    margin-left: 20px;
+    margin-top: 20px;
+    opacity: 0.6;
+    transition: 0.3s; 
+  }
+
+  .roundedImg6:hover{
+    opacity: 1;
+  }
+
+  .playstation-5{
+    width: 50%;
+    margin-right: -500px;
+    
+  }
+
+  .monthPS{
+    width: 1419px;
+    height: 494px;
+    background-image: linear-gradient(0deg,
+    #26254f,
+    rgba(255, 255, 255, 0) 50%), url(images/template-this-month-on-playstation-jul-homepage-background-desktop-01-en-20jun22.webp);
+    background-size: 1519px 550px;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-top: 64px;
+  }
+  .mnth-cont{
+    width: 50%;
+    height: 550px;
+    color: white;
+  }
+  .mth-head{
+    font-size: 39px;
+  }
+  .mth-bold{
+    font-size: 39px;
+    font-weight: bolder;
+  }
+
+  .mnth-dis{
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .mth-sub{
+    opacity: 0.6;
+    font-size: 20px;
+    margin-top: 26px;
+    padding-right: 140px;
+  }
+
+  .dis{
+    background-color: #26254f;
+    width: 1519px;
+    height: 210px;
+    margin-top: -9px;
+   
+  }
+
+  .ElderRing{
+    background-image:    linear-gradient(to top right,
+    rgb(0, 0, 0),
+    rgba(255, 255, 255, 0) 50%), url(images/elden-ring-hero-banner-desktop-01-en-24jan22.webp);
+    background-size: 1519px 550px;
+    background-repeat: no-repeat;
+    width: 1419px;
+    height: 553px;
+    padding-left: 100px;
+  }
+
+  .elder-cont{
+
+    width: 35%;
+    height: 100%;
+    padding-top: 190px;
+  }
+  .elder-img{
+    width: 84%;
+  }
+
+  .elder-dis{
+    color: white;
+  }
+  .elder-head{
+    margin-top: 10px;
+    font-size: 40px;
+  }
+  .elder-sub{
+    margin-top: 20px;
+    color: white;
+    line-height: 24px;
+  }
+
+
+  .blk-bg{
+    background: black;
+    margin-top: -5px;
+    width: 100%;
+    height:47rem;
+    padding-top: 16px;
+  }
+
+
+
+
+.gray-bg{
+  background-color: gray;
+  width:100%;
+  height: 550px;
+  z-index: -2;
+  background-image: url(images/ps-plus-monthly-games-banner-desktop-01-en-27may22.webp);
+  background-size: 1519px 550px;
+  background-repeat: no-repeat;
+}
+
+
+.gray-bg-padding{
+  position: relative;
+
+  width: 100%;
+  height: 440px;
+  display: flex;
+  padding-top: 48px;
+  padding-bottom: 68px;
+
+}
+
+.play-plus{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin-left: 100px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.img3-bk{
+  width: 50%;
+  height: 100%;
+  margin-right: 100px;
+  padding-left: 64px;
+}
+
+
+.logo-title{
+  position:relative;
+  height: 100px;
+  width: 100%;
+  padding-top: 105px;
+}
+
+.logo-img{
+  position:relative;
+  width: 328px;
+  height: 73px;
+}
+
+.plus-dis{
+  margin-top: 8px;
+  opacity: .8;
+  font-size: 17px;
+  padding-right: 37px
+}
+
+.img3{
+  position: relative;
+  width: 515px;
+  height: 439px;
+
+}
+
+.new-save-cont{
+  width: 85%;
+  height: 500px;
+  margin-top: 38px;
+  margin-bottom: 64px;
+  padding-left: 100px;
+  padding-right: 100px;
+  z-index: -2;
+  display: flex;
+}
+
+.new-save-text{
+  position: relative;
+  width: 30%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.newsav-head{
+  height: 97px;
+  width: 390px;
+  margin-top: 112px;
+}
+.newsave-heading{
+  font-size: 37px;
+}
+
+.newsave-dis{
+  opacity: .6;
+  font-size: 21px;
+  margin-top: 20px;
+}
+
+.offer-cont{
+  position: relative;
+  width: 70%;
+}
+
+.offer-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.social-cont{
+
+  background-color: #eeeeee;
+  position: relative;
+
+  width: auto;
+  height: 305px;
+  margin-top: 38px;
+  padding-top: 48px;
+  padding-bottom: 68px;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-text{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+.social-icons{
+
+  width: 100%;
+  height: 400px;
+}
+
+.icons{
+  position: relative;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-left: 476px;
+  padding-right: 476px;
+}
+.icon{
+  margin-right: 31px;
+}
+
+.icon-img{
+  height: 117px;
+  width: 117px;
+}
+
+.white-bg{
+  width:1519 px;
+  height: 40rem;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 48px;
+}
+
+.white-head{
+  text-align: center;
+  
+}
+
+.white-row{
+  
+  display: flex;
+  
+  height: 466px;
+  width: 1320px; 
+  justify-content: center;
+  padding-top: 70px;
+
+  
+}
+
+.white-dis{
+  margin: 10px;
+  height: 145px;
+  margin-top: 7px;
+}
+.ply-head{
+  font-size: 37px;
+}
+
+.main-dis{
+  margin-top: 27px;
+  opacity: .6;
+  font-size: 21px;
+}
+.ply-dis{
+  width: 365px;
+  margin-top: 27px;
+  opacity: .6;
+  font-size: 21px;
+}
+.ply-st4{
+  margin-right: 10px;
+  width: 29%;
+  height: 100%;
+}
+
+.ply-vr{
+  margin-right: 10px;
+  width: 29%;
+  height: 100%;
+}
+
+.ply-acess{
+  margin-right: 10px;
+  width: 29%;
+  height: 100%;
+}
+
+.ply-st4-img{
+  height: 218px;
+  width: 100%;
+}
+.ply-vr-img{
+  height: 218px;
+  width: 100%;
+}
+
+.ply-acess-img{
+  height: 218px;
+  width: 100%;
+}
+
+.footer{
+  background-color: #00439c;
+  width: auto;
+  height: 379px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+}
+
+.ft-content-grid{
+
+  width: 1320px;
+  height: 368px;
+  display: flex;
+}
+
+.ft-row{
+
+  width: 752px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.ft-row img{
+  width: 97px;
+  height: 77px;
+}
+.ft-row2{
+  
+  width: 221px;
+  height: 100%;
+  margin-right: 10px;
+  color: white;
+  line-height: 27px;
+}
+.ft-row2 p{
+  cursor: pointer;
+}
+.more-info{
+  color: white;
+
+  margin-top: -8px;;
+}
+.sie{
+  margin-top: 97px;
+}
+.country{
+  color: white;
+  display: flex;
+  margin-top: 20px;
+}
+
+.globe{
+  margin-top: 1.5px;
+}
